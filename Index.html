@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">   
+    <title>Principal</title>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body> 
+    <div class="container">
+        <header>
+            <h1 class="text-center">CONTROL DE GASTOS</h1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+                <div class="col">
+                    <div class="contenido-gastos">
+                        <h2 class="text-center">AÑADE LOS GASTOS AQUI</h2>
+                        <form id="agregar-gasto" action="#">
+                            <div class="form-group">
+                                <label for="gasto">Gasto:</label>
+                                <input type="text" class="form-control" id="gasto" placeholder="Nombre en gasto"> 
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidad">Valor:</label>
+                                <input type="number" class="form-control" id="cantidad" placeholder="valor en $">
+                            </div>
+                            <button type="submit" class="btn btn-danger">Agregar</button>
+                        </form>
+                    </div><!--contenido-gastos--> 
+                </div><!--col-->
+                <div class="col">
+                    <div class="contenido-lista">
+                        <h2 class="text-center">LISTADO DE GASTOS</h2>
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-warning">
+                                <p>Presupuesto: $<span id="total"></span></p>
+                            </div>
+                            <div class="restante alert alert-primary">
+                                <p>Restante: $<span id="restante"></span></p>
+                            </div>
+                        </div><!--presupuesto--> 
+
+                    </div><!--contenido de la lista--> 
+
+                </div><!--row--> 
+
+            </div>
+
+        </section>
+
+    </div><!--contenido--> 
+</body>
+</html>
