@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">   
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Principal</title>
     <script src="js/bootstrap.js"></script>
 </head>
-<body> 
+
+<body>
     <div class="container">
-        <header>
-            <h1 class="text-center">CONTROL DE GASTOS</h1>
-        </header>
+        <h1 class="text-center">CONTROL DE GASTOS</h1>
         <section class="contenido-principal">
             <div class="row">
                 <div class="col">
                     <div class="contenido-gastos">
-                        <h2 class="text-center">AÑADE LOS GASTOS AQUI</h2>
-                        <form id="agregar-gasto" action="#">
+                        <h2 class="text-center">Añade los gastos</h2>
+                        <form id="Agregar-gastos" action="#">
                             <div class="form-group">
-                                <label for="gasto">Gasto:</label>
-                                <input type="text" class="form-control" id="gasto" placeholder="Nombre en gasto"> 
+                                <label for="gasto">Gastos:</label>
+                                <input type="text" class="form-control" id="gasto" placeholder="Nombre del gasto">
                             </div>
                             <div class="form-group">
                                 <label for="cantidad">Valor:</label>
-                                <input type="number" class="form-control" id="cantidad" placeholder="valor en $">
+                                <input type="number" class="form-control" id="cantidad" placeholder="Valor en $">
                             </div>
                             <button type="submit" class="btn btn-danger">Agregar</button>
                         </form>
-                    </div><!--contenido-gastos--> 
-                </div><!--col-->
+                    </div>
+                </div>
                 <div class="col">
                     <div class="contenido-lista">
                         <h2 class="text-center">LISTADO DE GASTOS</h2>
@@ -43,16 +43,16 @@
                             <div class="restante alert alert-primary">
                                 <p>Restante: $<span id="restante"></span></p>
                             </div>
-                        </div><!--presupuesto--> 
-
-                    </div><!--contenido de la lista--> 
-
-                </div><!--row--> 
-
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
-
-    </div><!--contenido--> 
+    </div>
+    
+    <script src="js/gastos.js"></script>
 </body>
+
 </html>
+
+//- presupuesto en total y que muetre el restante, una tabla que muestre el producto, el valor del producto y que muestre el restante y  agrega un boton que elimine un valor por ejmplo si tengo platano y el valor etc y tengo otro llamado patata que el boton me permita borrar el producto de platano y  quede el producto patata//
